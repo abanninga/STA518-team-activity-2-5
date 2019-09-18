@@ -1,2 +1,2 @@
 # activity0205-visualization-customization
-Starter doc, code, and data for Activity 2.1
+Starter doc, code, and data for Activity 2.5
