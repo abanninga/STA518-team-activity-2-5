@@ -16,10 +16,7 @@ Requirements:
 
 Goals:
 
-<!-- - Create standard data visualizations  -->
-<!-- - Use `ggplot2` functions to plot transformations  -->
-<!-- - Add new layers to help make important information more visible  -->
-<!-- - Add new layers to to summarize visual information -->
+- Extend the default `ggplot2` visualizations
 
 **Pick a lead**:
 This person is not solely responsible for doing the activity, but they are responsible for organizing the collective team effort - for example, making sure all parts are completed and pushing them to the Team GitHub repo.
@@ -27,11 +24,8 @@ This person is not solely responsible for doing the activity, but they are respo
 ## Introduction
 
 In this activity, we build on our foundational understanding of `ggplot2` to take more control of our visualizations.
-I want to leave this activity more up to your creativity.
-A great resource will be the [Data Visualization Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/#ggplot2) created by RStudio.
-
-<!-- In your first Application Task, you explored the `gapminder` data set. -->
-<!-- In this activity, we will go through a methodical process of creating effective (easy for the audience to decode) visualizations. -->
+I want to leave this activity more up to you and your team's creativity so I will only focus what you need should explore.
+A great resource for working with `ggplot2` is the [Data Visualization Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/#ggplot2) created by RStudio.
 
 ## Getting started
 
@@ -39,7 +33,7 @@ We are still relying on only one Team Member (the lead) pushing the complete act
 
 1. *All* Team Members:
   - Go to the Documents section on [Bb](https://mybb.gvsu.edu)
-  - Click on the link titled `activity0204`
+  - Click on the link titled `activity0205`
   - Click on the "Join" button next to your corresponding team name in the **Join an existing team** section
 2. *All* Team Members now will:
   - In your team repo, click the green **Clone or download** button, select "Use HTTPS" if this isn't the default option, and click on the clipboard icon to copy the repo URL
@@ -88,7 +82,7 @@ We are still relying on only one Team Member (the lead) pushing the complete act
     ```
     
 5. *All* Team Members will now name their RStudio project:
-  - Currently your RStudio project is called *Untitled Project*.  Update the name of your project to be "Activity 2-4 - Data Visualization Intro"
+  - Currently your RStudio project is called *Untitled Project*.  Update the name of your project to be "Activity 2-5 - Data Visualization Customization"
 6. The *Lead* Team Member to do the following in RStudio:
   - Open the `.Rmd` file and update the **YAML** by changing the author name to your **Team** name and date to today, then knit the document.
   - Go to the *Git* pane and click on **Diff** to confirm that you are happy with the changes.
@@ -109,8 +103,8 @@ We continue using Jenny Bryan's (by way of Hans Rosling) `gapminder` data set.
 ## Data Visualization Customization
 
 The following base visualization that I want you to improve is below.
-I am going to avoid telling you specific things to do and have this be more of a creativity activity.
-For each exercise, you are expected to point out what changes you made and explain why you think that make your visualization more effective.
+Again, I am going to avoid telling you specific things to do and have this be more of a "creativity activity".
+However, in each exercise, I expect you to point out what changes you made and explain why you think that make your visualization more effective.
 
 
 ```r
@@ -162,5 +156,8 @@ Add something else that we didn't cover in the previous exercises.
 ***
 
 ### A tease
+
+We will see how to do more within `ggplot2` and other data visualizations (e.g., `plotly`) later this semester. 
+For example, you can create gifs:
 
 ![](activity0205-instructions_files/figure-html/unnamed-chunk-7-1.gif)<!-- -->
