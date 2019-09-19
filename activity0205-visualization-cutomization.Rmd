@@ -1,7 +1,7 @@
 ---
 title: "Activity 2.5 - Exploratory Data Analysis: Data Visualizations - Customization"
-author: "INSERT TEAM NAME HERE"
-date: "INSERT TODAY'S DATE HERE"
+author: "Purple"
+date: "09/19/2019"
 output: 
   html_document: 
     keep_md: yes
@@ -29,6 +29,19 @@ my_gm %>%
   geom_point() +
   facet_wrap(~ continent)
 ```
+
+```{r}
+p <- my_gm %>% 
+  filter(year == "2007",
+         continent != "Oceania") %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp)) +
+  scale_x_log10() + 
+  geom_point() +
+  facet_wrap(~ continent)
+
+p + labs(title = "test title")
+```
+  
 
 ### Exercise 1
 
