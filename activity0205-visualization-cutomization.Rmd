@@ -30,6 +30,27 @@ my_gm %>%
   facet_wrap(~ continent)
 ```
 
+  
+
+### Exercise 1
+
+```{r}
+p <- my_gm %>% 
+  filter(year == "2007",
+         continent != "Oceania") %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  scale_x_log10() + 
+  geom_point() +
+  facet_wrap(~ continent) +
+  theme_dark()
+
+p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
+  xlab("GDP per capita") +
+  ylab("Life Expectancy")
+```
+
+### Exercise 2
+
 ```{r}
 p <- my_gm %>% 
   filter(year == "2007",
@@ -39,19 +60,10 @@ p <- my_gm %>%
   geom_point() +
   facet_wrap(~ continent)
 
-p + labs(title = "test title")
+p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
+  xlab("GDP per capita") +
+  ylab("Life Expectancy")
 ```
-  
-
-### Exercise 1
-
-(Type your answer to Exercise 1 here. Add code chunks as needed. Don't forget 
-to label your code chunk. Do not use spaces in code chunk labels.)
-
-### Exercise 2
-
-(Type your answer to Exercise 2 here. Add code chunks as needed. Don't forget 
-to label your code chunk. Do not use spaces in code chunk labels.)
 
 ### Exercise 3
 
