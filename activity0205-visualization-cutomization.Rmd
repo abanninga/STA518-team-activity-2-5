@@ -55,22 +55,51 @@ p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
 p <- my_gm %>% 
   filter(year == "2007",
          continent != "Oceania") %>% 
-  ggplot(aes(x = gdpPercap, y = lifeExp)) +
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent)) +
   scale_x_log10() + 
-  geom_point() +
+  geom_point(pch = 12) +
   facet_wrap(~ continent)
 
 p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
   xlab("GDP per capita") +
-  ylab("Life Expectancy")
+  ylab("Life Expectancy") +
+  theme_linedraw()
 ```
 
 ### Exercise 3
+```{r}
+p <- my_gm %>% 
+  filter(year == "2007",
+         continent != "Oceania") %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  scale_x_log10() + 
+  geom_point(pch = 11) +
+  scale_color_manual(values = continent_colors) +
+  facet_wrap(~ continent)
 
-...
+p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
+  xlab("GDP per capita") +
+  ylab("Life Expectancy") +
+  theme_linedraw()
+```
+
 
 
 ### Exercise 4
 
-...
+```{r}
+p <- my_gm %>% 
+  filter(year == "2007",
+         continent != "Oceania") %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  scale_x_log10() + 
+  geom_point(color = "#00AFBB") + geom_density_2d(color = "#E7B800") +
+  scale_color_manual(values = continent_colors) +
+  facet_wrap(~ continent)
+
+p + labs(title = "GDP Per Capita vs Life Expectancy by Continent") +
+  xlab("GDP per capita") +
+  ylab("Life Expectancy") +
+  theme_linedraw()
+```
 
